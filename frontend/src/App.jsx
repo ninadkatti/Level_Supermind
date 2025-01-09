@@ -29,12 +29,11 @@ mermaid.initialize({
     }
 });
 
-// API Client 
+// API Client
 class LangflowAPI {
-  constructor() {
-      this.baseUrl = process.env.REACT_APP_API_BASE_URL;
-  }
-
+    constructor() {
+        this.baseUrl = "https://level-supermind.onrender.com/api";
+    }
 
     extractTextFromResponse(responseData) {
         try {
